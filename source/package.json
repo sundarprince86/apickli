@@ -1,40 +1,46 @@
 {
-    "name": "apickli",
-    "version": "2.3.3",
-    "description": "Collection of utility functions and a gherkin framework for REST API integration testing based on cucumber.js",
-    "main": "apickli.js",
-    "readme": "README.md",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/apickli/apickli.git"
-    },
-    "keywords": [
-        "cucumber.js",
-        "integration",
-        "rest",
-        "api"
-    ],
-    "license": "MIT",
-    "dependencies": {
-        "JSONPath": "^0",
-        "is-my-json-valid": "^2",
-        "path": "^0",
-        "prettyjson": "^1",
-        "request": "^2",
-        "swagger-tools": "^0",
-        "xmldom": "^0",
-        "xpath.js": "^1"
-    },
-    "devDependencies": {
-        "cucumber": "^5",
-        "eslint": "^6",
-        "eslint-config-google": "^0",
-        "gulp": "^4",
-        "cucumber-html-reporter": "^5",
-        "fs-extra": "^8",
-        "argv": "^0",
-        "gulp-cucumber": "^0",
-        "gulp-eslint": "^6",
-        "gulp4-run-sequence": "^0"
-    }
+  "name": "apickli",
+  "version": "2.3.3",
+  "description": "Collection of utility functions and a gherkin framework for REST API integration testing based on cucumber.js",
+  "main": "apickli.js",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apickli/apickli.git"
+  },
+  "keywords": [
+    "cucumber.js",
+    "integration",
+    "rest",
+    "api"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "JSONPath": "^0",
+    "is-my-json-valid": "^2",
+    "path": "^0",
+    "prettyjson": "^1",
+    "request": "^2",
+    "swagger-tools": "^0",
+    "xmldom": "^0",
+    "xpath.js": "^1",
+    "snyk": "^1.316.1"
+  },
+  "devDependencies": {
+    "cucumber": "^5",
+    "eslint": "^6",
+    "eslint-config-google": "^0",
+    "gulp": "^4",
+    "cucumber-html-reporter": "^5",
+    "fs-extra": "^8",
+    "argv": "^0",
+    "gulp-cucumber": "^0",
+    "gulp-eslint": "^6",
+    "gulp4-run-sequence": "^0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
